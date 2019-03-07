@@ -56,4 +56,45 @@ your_variable.add
 
 ```
 
-In the next branch we will learn about importing files in Ruby
+### Importing Files
+
+#### Getting Started
+
+##### What to expect?
+
+* Require files on the same directory
+* Require files on a different directory
+
+> Importing files from the same directory
+```
+.
+├── file_a.rb
+└── file_b.rb
+```
+
+To require everything from `file_a.rb` to `file_b.rb`
+
+```ruby
+require "file_a.rb"
+```
+
+> Importing files from different directory
+
+```
+.
+├── another_dir
+|   └── file_a.rb
+└── file_b.rb
+```
+
+To require everything from `file_a.rb` to `file_b.rb`
+
+```ruby
+
+require "./another_dir/file_a.rb"
+
+```
+
+Just that simple
+
+Next we cover `loops` and `iteration`
